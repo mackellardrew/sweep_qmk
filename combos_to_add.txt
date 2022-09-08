@@ -1,0 +1,71 @@
+enum combos { 
+  G_M_LT_0,
+  M_Q_LT_0,
+  M_W_LT_1,
+  M_F_LT_2,
+  M_P_LT_3,
+  M_B_LT_4,
+  G_J_LT_5,
+  G_L_LT_6,
+  G_U_LT_7,
+  G_Y_LT_8,
+  G_;_LT_9,
+  K_Q_OSL(0),
+  K_W_OSL(1),
+  K_F_OSL(2),
+  K_P_OSL(3),
+  K_B_OSL(4),
+  V_J_OSL(5),
+  V_L_OSL(6),
+  V_U_OSL(7),
+  V_Y_OSL(8),
+  V_;_OSL(9),
+  
+};
+
+const uint16_t PROGMEM g_m_lt_0[] = { KC_G, KC_M, COMBO_END};
+const uint16_t PROGMEM m_q_lt_0[] = { KC_M, KC_Q, COMBO_END};
+const uint16_t PROGMEM m_w_lt_1[] = { KC_M, KC_W, COMBO_END};
+const uint16_t PROGMEM m_f_lt_2[] = { KC_M, KC_F, COMBO_END};
+const uint16_t PROGMEM m_p_lt_3[] = { KC_M, KC_P, COMBO_END};
+const uint16_t PROGMEM m_b_lt_4[] = { KC_M, KC_B, COMBO_END};
+const uint16_t PROGMEM g_j_lt_5[] = { KC_G, KC_J, COMBO_END};
+const uint16_t PROGMEM g_l_lt_6[] = { KC_G, KC_L, COMBO_END};
+const uint16_t PROGMEM g_u_lt_7[] = { KC_G, KC_U, COMBO_END};
+const uint16_t PROGMEM g_y_lt_8[] = { KC_G, KC_Y, COMBO_END};
+const uint16_t PROGMEM g_;_lt_9[] = { KC_G, KC_;, COMBO_END};
+const uint16_t PROGMEM k_q_osl(0)[] = { KC_K, KC_Q, COMBO_END};
+const uint16_t PROGMEM k_w_osl(1)[] = { KC_K, KC_W, COMBO_END};
+const uint16_t PROGMEM k_f_osl(2)[] = { KC_K, KC_F, COMBO_END};
+const uint16_t PROGMEM k_p_osl(3)[] = { KC_K, KC_P, COMBO_END};
+const uint16_t PROGMEM k_b_osl(4)[] = { KC_K, KC_B, COMBO_END};
+const uint16_t PROGMEM v_j_osl(5)[] = { KC_V, KC_J, COMBO_END};
+const uint16_t PROGMEM v_l_osl(6)[] = { KC_V, KC_L, COMBO_END};
+const uint16_t PROGMEM v_u_osl(7)[] = { KC_V, KC_U, COMBO_END};
+const uint16_t PROGMEM v_y_osl(8)[] = { KC_V, KC_Y, COMBO_END};
+const uint16_t PROGMEM v_;_osl(9)[] = { KC_V, KC_;, COMBO_END};
+
+combo_t key_combos[COMBO_COUNT] = {
+  [G_M_LT_0] = COMBO(g_m_lt_0, LT_0),
+  [M_Q_LT_0] = COMBO(m_q_lt_0, LT_0),
+  [M_W_LT_1] = COMBO(m_w_lt_1, LT_1),
+  [M_F_LT_2] = COMBO(m_f_lt_2, LT_2),
+  [M_P_LT_3] = COMBO(m_p_lt_3, LT_3),
+  [M_B_LT_4] = COMBO(m_b_lt_4, LT_4),
+  [G_J_LT_5] = COMBO(g_j_lt_5, LT_5),
+  [G_L_LT_6] = COMBO(g_l_lt_6, LT_6),
+  [G_U_LT_7] = COMBO(g_u_lt_7, LT_7),
+  [G_Y_LT_8] = COMBO(g_y_lt_8, LT_8),
+  [G_;_LT_9] = COMBO(g_;_lt_9, LT_9),
+  [K_Q_OSL(0)] = COMBO(k_q_osl(0), OSL(0)),
+  [K_W_OSL(1)] = COMBO(k_w_osl(1), OSL(1)),
+  [K_F_OSL(2)] = COMBO(k_f_osl(2), OSL(2)),
+  [K_P_OSL(3)] = COMBO(k_p_osl(3), OSL(3)),
+  [K_B_OSL(4)] = COMBO(k_b_osl(4), OSL(4)),
+  [V_J_OSL(5)] = COMBO(v_j_osl(5), OSL(5)),
+  [V_L_OSL(6)] = COMBO(v_l_osl(6), OSL(6)),
+  [V_U_OSL(7)] = COMBO(v_u_osl(7), OSL(7)),
+  [V_Y_OSL(8)] = COMBO(v_y_osl(8), OSL(8)),
+  [V_;_OSL(9)] = COMBO(v_;_osl(9), OSL(9)),
+  
+};
